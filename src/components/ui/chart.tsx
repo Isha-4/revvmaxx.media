@@ -106,10 +106,17 @@ const ChartTooltip = RechartsPrimitive.Tooltip
 
 function ChartTooltipContent({
   active,
-  payload,
+  payload = [],
   className,
   indicator = "dot",
   hideLabel = false,
+}: {
+  active?: boolean;
+  payload?: any[];
+  className?: string;
+  indicator?: string;
+  hideLabel?: boolean;
+}) {
   hideIndicator = false,
   label,
   labelFormatter,
