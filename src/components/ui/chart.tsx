@@ -117,7 +117,6 @@ function ChartTooltipContent({
   indicator?: string;
   hideLabel?: boolean;
 }) {
-  hideIndicator = false,
   label,
   labelFormatter,
   labelClassName,
